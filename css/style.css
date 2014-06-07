@@ -90,21 +90,7 @@ a img {
   border: none;
 }
 /* custom Font*/
-@font-face {
-  font-family: "covered_by_your_graceregular";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../font/coveredbyyourgrace-webfont.eot");
-  src: url("../font/coveredbyyourgrace-webfont.eot?#iefix") format('embedded-opentype'), url("../font/coveredbyyourgrace-webfont.svg#covered_by_your_graceregular") format('svg'), url("../font/coveredbyyourgrace-webfont.woff") format('woff'), url("../font/coveredbyyourgrace-webfont.ttf") format('truetype');
-}
 /* icon Font */
-@font-face {
-  font-family: "FontAwesome";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../font/fontawesome-webfont.eot?v=#4.0.3");
-  src: url("../font/fontawesome-webfont.eot?#iefix&v=#4.0.3") format("embedded-opentype"), url("../font/fontawesome-webfont.woff?v=#4.0.3") format("woff"), url("../font/fontawesome-webfont.ttf?v=#4.0.3") format("truetype"), url("../font/fontawesome-webfont.svg#fontawesomeregular?v=#4.0.3") format("svg");
-}
 /* Public style */
 * {
   -webkit-margin-before: 0;
@@ -1301,64 +1287,64 @@ footer.article-footer {
   display: block;
   overflow: hidden;
 }
-padding 5px padding-right 10px .prev a:hover,
-padding 5px padding-right 10px .next a:hover {
+.article-nav .prev a:hover,
+.article-nav .next a:hover {
   background: #2ca6cb;
   color: #fff;
 }
-padding 5px padding-right 10px .prev {
+.article-nav .prev {
   width: 100%;
   float: left;
 }
-padding 5px padding-right 10px .prev strong {
-  padding-left: 1.8em;
+.article-nav .prev strong {
+  padding-left: 2.3em;
 }
-padding 5px padding-right 10px .prev span:before {
+.article-nav .prev span:before {
   font-family: "FontAwesome";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\f100";
-  padding-right: 0.5em;
+  padding: 0 0.5em;
 }
 @media only screen and (min-width: 768px) {
-  padding 5px padding-right 10px .prev {
+  .article-nav .prev {
     width: 45%;
     float: left;
   }
 }
-padding 5px padding-right 10px .next {
+.article-nav .next {
   width: 100%;
   float: left;
   text-align: left;
 }
-padding 5px padding-right 10px .next strong {
-  padding-left: 1.5em;
+.article-nav .next strong {
+  padding-left: 2em;
 }
-padding 5px padding-right 10px .next span:before {
+.article-nav .next span:before {
   font-family: "FontAwesome";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\f101";
-  padding-right: 0.5em;
+  padding: 0 0.5em;
 }
 @media only screen and (min-width: 768px) {
-  padding 5px padding-right 10px .next {
+  .article-nav .next {
     width: 45%;
     float: right;
     text-align: right;
   }
-  padding 5px padding-right 10px .next strong {
-    padding-right: 1.8em;
+  .article-nav .next strong {
+    padding-right: 2.3em;
   }
-  padding 5px padding-right 10px .next span:before {
+  .article-nav .next span:before {
     content: none;
   }
-  padding 5px padding-right 10px .next span:after {
+  .article-nav .next span:after {
     font-family: "FontAwesome";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     content: "\f101";
-    padding-left: 0.5em;
+    padding: 0 0.5em;
   }
 }
 section.comment {
