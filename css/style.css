@@ -1,18 +1,10 @@
-@import url("//fonts.googleapis.com/css?family=Lato:400,400italic");
-@font-face {
-  font-family: 'FontAwesome';
-  font-style: normal;
-  font-weight: normal;
-  src: url("font/fontawesome-webfont.eot?#iefix") format('embedded-opentype'), url("font/fontawesome-webfont.woff") format('woff'), url("font/fontawesome-webfont.ttf") format('truetype'), url("font/fontawesome-webfont.svg#FontAwesomeRegular") format('svg');
-}
 * {
   margin: 0;
   padding: 0;
 }
 body {
-  background: #eee;
   color: #444;
-  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: 'Open Sans', Tahoma, Arial, Roboto, "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", Simsun, sans-self;
   font-size: 14px;
   text-shadow: 0 0 1px transparent;
 }
@@ -32,7 +24,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Lato", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', Tahoma, Arial, Roboto, "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", Simsun, sans-self;
 }
 h1 {
   font-size: 1.8em;
@@ -45,7 +37,7 @@ h3 {
 }
 a {
   text-decoration: none;
-  color: #258fb8;
+  color: #009cdc;
 }
 a:hover {
   text-decoration: underline;
@@ -109,7 +101,7 @@ a:hover {
   color: #999;
 }
 #header a:hover {
-  color: #258fb8;
+  color: #009cdc;
   text-decoration: none;
 }
 #header h1 {
@@ -117,14 +109,20 @@ a:hover {
   font-size: 2.5em;
   line-height: 1;
 }
+#header h1 a {
+  font-family: 'Playball', cursive;
+}
 #header h2 {
   font-weight: normal;
   font-size: 0.9em;
   line-height: 1;
   margin-top: 10px;
 }
+#header h2 a {
+  font-family: 'Playball', cursive;
+}
 #header #main-nav {
-  font-family: "Lato", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', Tahoma, Arial, Roboto, "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", Simsun, sans-self;
 }
 #header #main-nav ul {
   list-style: none;
@@ -145,9 +143,51 @@ a:hover {
   color: #009cdc;
   border-bottom-color: #009cdc;
 }
+#page-heading-wrap {
+  text-align: left;
+  line-height: 1.4em;
+  padding: 35px 0;
+  background: #f9f9f9;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 50px;
+}
+#page-heading-wrap header {
+  position: relative;
+}
+#page-heading-wrap header h1,
+#page-heading-wrap header h2 {
+  color: #000;
+  font-size: 28px;
+  font-weight: normal;
+  padding-left: 5px;
+}
+#page-heading-wrap header ul {
+  margin-top: 10px;
+  font-size: 14px;
+  list-style: none;
+  padding-left: 5px;
+  margin-bottom: 29px;
+}
+#page-heading-wrap header ul li {
+  float: left;
+  margin-right: 15px;
+}
+#page-heading-wrap header ul li span {
+  color: #444;
+  font-weight: 400;
+}
+#page-heading-wrap header ul li time {
+  color: #666;
+}
+#page-heading-wrap header ul li a {
+  text-decoration: underline;
+  color: #009cdc;
+}
+#page-heading-wrap header ul li :hover {
+  color: #000;
+}
 article {
-  -webkit-box-shadow: 1px 2px 3px #ddd;
-  box-shadow: 1px 2px 3px #ddd;
   background: #fff;
 }
 article.page {
@@ -173,7 +213,6 @@ article.link .title a:after {
   vertical-align: super;
 }
 article .post-content {
-  padding: 20px 20px 15px 77px;
   margin-bottom: 50px;
   position: relative;
 }
@@ -181,6 +220,54 @@ article .post-content {
   article .post-content {
     padding-left: 20px;
   }
+}
+article .post-content-index {
+  padding: 10px 20px 15px 77px;
+  margin-bottom: 50px;
+  position: relative;
+header
+  position: relative;
+}
+@media screen and (max-width: 600px) {
+  article .post-content-index {
+    padding-left: 20px;
+  }
+}
+article .post-content-index h1,
+article .post-content-index h2 {
+  font-size: 28px;
+  font-weight: normal;
+  padding-left: 5px;
+}
+article .post-content-index h1 a,
+article .post-content-index h2 a {
+  color: #009cdc;
+}
+article .post-content-index ul {
+  margin-top: 3px;
+  font-size: 14px;
+  list-style: none;
+  width: 100%;
+  padding-left: 5px;
+}
+article .post-content-index ul li {
+  float: left;
+  margin-right: 15px;
+}
+article .post-content-index ul li span {
+  color: #444;
+  font-weight: 400;
+}
+article .post-content-index ul li time {
+  color: #666;
+  display: inline;
+}
+article .post-content-index ul li a {
+  text-decoration: underline;
+  color: #009cdc;
+}
+article .post-content-index ul li :hover {
+  color: #000;
 }
 article .gallery {
   overflow: hidden;
@@ -252,7 +339,7 @@ article header .icon {
   position: absolute;
   top: 20px;
   left: 20px;
-  color: #258fb8;
+  color: #009cdc;
 }
 @media screen and (max-width: 600px) {
   article header .icon {
@@ -261,7 +348,7 @@ article header .icon {
 }
 article header .icon:before {
   position: absolute;
-  font: 32px FontAwesome;
+  font: 45px FontAwesome;
   top: 0;
   left: 0;
   width: 32px;
@@ -269,7 +356,7 @@ article header .icon:before {
 }
 article header time {
   color: #999;
-  font: 0.9em "Lato", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font: 0.9em 'Open Sans', Tahoma, Arial, Roboto, "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", Simsun, sans-self;
   margin-bottom: 5px;
   display: block;
   line-height: 1;
@@ -278,13 +365,14 @@ article header .title {
   font-weight: normal;
 }
 article header .title a {
-  color: #444;
+  color: #009cdc;
 }
 article header .title a:hover {
-  color: #258fb8;
+  color: #444;
   text-decoration: none;
 }
 article .entry {
+  margin-top: 40px;
   text-align: justify;
   line-height: 1.6;
 }
@@ -448,7 +536,7 @@ article footer a {
   color: #999;
 }
 article footer a:hover {
-  color: #258fb8;
+  color: #009cdc;
   text-decoration: none;
 }
 article footer a:before {
@@ -505,12 +593,12 @@ article footer .addthis iframe {
   padding: 5px 10px;
   background: #ddd;
   color: #999;
-  font-family: "Lato", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', Tahoma, Arial, Roboto, "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", Simsun, sans-self;
   text-shadow: 0 0 1px #fff;
   margin-bottom: 50px;
 }
 #pagination a:hover {
-  background: #258fb8;
+  background: #009cdc;
   color: #fff;
   text-decoration: none;
   text-shadow: none;
@@ -567,20 +655,23 @@ article footer .addthis iframe {
 }
 #sidebar .widget {
   background: #fff;
-  -webkit-box-shadow: 1px 2px 3px #ddd;
-  box-shadow: 1px 2px 3px #ddd;
   margin-bottom: 30px;
   word-wrap: break-word;
 }
 #sidebar .widget .title {
-  padding: 15px 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #009cdc;
+  margin-bottom: 20px;
   font-size: 1em;
-  border-bottom: 1px solid #ddd;
   font-weight: normal;
 }
 #sidebar .widget .entry {
   font-size: 0.9em;
-  padding: 15px 20px;
+}
+#sidebar .widget .entry li {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 10px;
 }
 #sidebar .widget ul,
 #sidebar .widget ol,
@@ -604,7 +695,7 @@ article footer .addthis iframe {
 }
 #sidebar .search input {
   background: #fff;
-  font-family: "Lato", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', Tahoma, Arial, Roboto, "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", Simsun, sans-self;
   font-style: italic;
   font-size: 1em;
   padding: 10px 15px;
@@ -621,7 +712,6 @@ article footer .addthis iframe {
   outline: none;
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
-  -o-transition: all 0.15s ease-in-out;
 }
 #sidebar .search input:focus {
   border-color: #00a8ed;
@@ -662,7 +752,7 @@ article footer .addthis iframe {
 #footer {
   color: #999;
   margin-bottom: 50px;
-  font: 0.9em/1.6 "Lato", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font: 0.9em/1.6 'Open Sans', Tahoma, Arial, Roboto, "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", Simsun, sans-self;
   text-shadow: 0 0 1px #fff;
 }
 .entry .gist {
@@ -700,10 +790,10 @@ article footer .addthis iframe {
   font-size: 100%;
 }
 .entry .gist .gist-file .gist-meta a {
-  color: #258fb8;
+  color: #009cdc;
 }
 .entry .gist .gist-file .gist-meta a:visited {
-  color: #258fb8;
+  color: #009cdc;
 }
 figure.highlight {
   background: #eee;
