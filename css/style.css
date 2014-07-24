@@ -35,6 +35,15 @@ h2 {
 h3 {
   font-size: 1.3em;
 }
+.transition {
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
 a {
   text-decoration: none;
   color: #009cdc;
@@ -110,7 +119,7 @@ a:hover {
   line-height: 1;
 }
 #header h1 a {
-  font-family: 'Playball', cursive;
+  font-family: 'Playball', cursive, "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", Simsun, sans-self;
 }
 #header h2 {
   font-weight: normal;
@@ -119,10 +128,12 @@ a:hover {
   margin-top: 10px;
 }
 #header h2 a {
-  font-family: 'Playball', cursive;
+  font-family: 'Playball', cursive, "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", Simsun, sans-self;
 }
 #header #main-nav {
   font-family: 'Open Sans', Tahoma, Arial, Roboto, "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", Simsun, sans-self;
+  padding-top: 8px;
+  letter-spacing: 1px;
 }
 #header #main-nav ul {
   list-style: none;
@@ -133,13 +144,17 @@ a:hover {
   height: 30px;
   line-height: 30px;
 }
+#header #main-nav ul li .rss-top,
+#header #main-nav ul li:hover {
+  color: #009cdc;
+}
 #header #main-nav ul a {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   padding-bottom: 5px;
   border-bottom: 1px solid transparent;
 }
-#header #main-nav ul :hover {
+#header #main-nav ul a:hover {
   color: #009cdc;
   border-bottom-color: #009cdc;
 }
@@ -151,6 +166,11 @@ a:hover {
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 600px) {
+  #page-heading-wrap {
+    text-align: center;
+  }
 }
 #page-heading-wrap header {
   position: relative;
@@ -184,11 +204,13 @@ a:hover {
   text-decoration: underline;
   color: #009cdc;
 }
-#page-heading-wrap header ul li :hover {
-  color: #000;
+#page-heading-wrap header ul li a:hover {
+  opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
 }
 article {
-  background: #fff;
+  font-weight: 300;
 }
 article.page {
   padding-left: 20px;
@@ -222,16 +244,17 @@ article .post-content {
   }
 }
 article .post-content-index {
-  padding: 10px 20px 15px 77px;
+  padding: 0 20px 0 77px;
   margin-bottom: 50px;
-  position: relative;
-header
   position: relative;
 }
 @media screen and (max-width: 600px) {
   article .post-content-index {
     padding-left: 20px;
   }
+}
+article .post-content-index header {
+  margin-bottom: 40px;
 }
 article .post-content-index h1,
 article .post-content-index h2 {
@@ -266,8 +289,10 @@ article .post-content-index ul li a {
   text-decoration: underline;
   color: #009cdc;
 }
-article .post-content-index ul li :hover {
-  color: #000;
+article .post-content-index ul li a:hover {
+  opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
 }
 article .gallery {
   overflow: hidden;
@@ -337,7 +362,7 @@ article header .icon {
   height: 32px;
   margin-right: 25px;
   position: absolute;
-  top: 20px;
+  top: 10px;
   left: 20px;
   color: #009cdc;
 }
@@ -368,27 +393,14 @@ article header .title a {
   color: #009cdc;
 }
 article header .title a:hover {
-  color: #444;
+  opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
   text-decoration: none;
 }
 article .entry {
-  margin-top: 40px;
   text-align: justify;
   line-height: 1.6;
-}
-article .entry p,
-article .entry blockquote,
-article .entry ul,
-article .entry ol,
-article .entry dl,
-article .entry table,
-article .entry iframe,
-article .entry h3,
-article .entry h4,
-article .entry h5,
-article .entry h6,
-article .entry .video-container {
-  margin-top: 15px;
 }
 article .entry blockquote {
   border-top: 1px solid #ddd;
@@ -523,14 +535,18 @@ article .entry .pullquote {
   font-size: 1.5em;
 }
 article footer {
-  margin-top: 15px;
-  padding-top: 10px;
-  border-top: 1px solid #ddd;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #ddd;
+  margin-top: 25px;
   color: #999;
   font-size: 0.9em;
   line-height: 16px;
   position: relative;
   min-height: 16px;
+}
+article footer .share {
+  margin-top: 30px;
 }
 article footer a {
   color: #999;
@@ -544,8 +560,18 @@ article footer a:before {
   padding-right: 10px;
   vertical-align: middle;
 }
-article footer a.more-link:before {
-  content: '\f054';
+article footer a.more-link {
+  font-style: italic;
+  font-weight: 600;
+  color: #009cdc;
+}
+article footer a.more-link:hover {
+  opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
+}
+article footer a.more-link i {
+  margin-left: 5px;
 }
 article footer a.comment-link:before {
   content: '\f075';
@@ -578,10 +604,6 @@ article footer .addthis iframe {
   margin-top: 0;
 }
 #comment {
-  padding: 20px;
-  background: #fff;
-  -webkit-box-shadow: 1px 2px 3px #ddd;
-  box-shadow: 1px 2px 3px #ddd;
   margin-bottom: 50px;
 }
 #comment .title {
@@ -718,15 +740,31 @@ article footer .addthis iframe {
   -webkit-box-shadow: 0 0 5px #98e1ff;
   box-shadow: 0 0 5px #98e1ff;
 }
-#sidebar .tag small {
-  margin-left: 15px;
+#sidebar .tag small,
+#sidebar .category small {
+  margin-left: 5px;
   color: #999;
 }
-#sidebar .tag small:before {
+#sidebar .tag small:before,
+#sidebar .category small:before {
   content: '(';
 }
-#sidebar .tag small:after {
+#sidebar .tag small:after,
+#sidebar .category small:after {
   content: ')';
+}
+#sidebar .tag a {
+  margin-right: 5px;
+  padding: 5px 7px;
+  border: 1px solid #eee;
+  float: left;
+  display: block;
+  margin-bottom: 5px;
+}
+#sidebar .tag a:hover {
+  background: #eee;
+  border-color: #ddd;
+  text-decoration: none;
 }
 #sidebar .twitter li {
   border-bottom: 1px solid #ddd;
@@ -751,9 +789,23 @@ article footer .addthis iframe {
 }
 #footer {
   color: #999;
-  margin-bottom: 50px;
-  font: 0.9em/1.6 'Open Sans', Tahoma, Arial, Roboto, "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", Simsun, sans-self;
+  margin-bottom: 20px;
   text-shadow: 0 0 1px #fff;
+}
+#footer .alignleft {
+  padding-top: 15px;
+}
+#footer .alignright {
+  padding: 15px 0;
+  font-size: 2em;
+  line-height: 1;
+}
+#footer .alignright a {
+  color: #999;
+  margin-right: 12px;
+}
+#footer .alignright a:hover {
+  color: #009cdc;
 }
 .entry .gist {
   background: #eee;

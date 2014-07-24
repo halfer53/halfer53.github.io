@@ -35,9 +35,15 @@
 
 
 
- <link href='http://fonts.googleapis.com/css?family=Open+Sans|Playball' rel='stylesheet' type='text/css'>
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.0.min.js"></script>
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400|Playball' rel='stylesheet' type='text/css'>
+
+<!-- 360 Font CDN in China -->
+<!-- <link href='http://fonts.useso.com/css?family=Open+Sans:300,400|Playball' rel='stylesheet' type='text/css'> -->
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.0.min.js"></script>
 <script>
 if (!window.jQuery) {
 var script = document.createElement('script');
@@ -45,6 +51,7 @@ script.src = "http://libs.baidu.com/jquery/2.0.0/jquery.min.js";
 document.body.appendChild(script);
 }
 </script>
+
 </head>
 
 
@@ -59,19 +66,20 @@ document.body.appendChild(script);
     
       <li><a href="/archives">Archives</a></li>
     
+    <li><a href="https://halfer53.github.io/rss2.xml" target="_blank" title="bruce tan blog rss" class="rss-top"><i class="fa fa-rss"></i></a></li>
   </ul>
   <div class="clearfix"></div>
 </nav>
 <div class="clearfix"></div></header>
   <div id="page-heading-wrap">
-  	<header class="align-left inner">
+  	<header class="inner">
   		
         <h2>My Personal Blog</h2>
       
   	</header>
   </div>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper">
+    <div id="main-col" class="alignleft">
 <h2 class="archive-title">2014</h2>
 
 
@@ -86,7 +94,7 @@ document.body.appendChild(script);
           <div class="icon"></div>
             
     
-      <h1 class="title"><a href="/2014/06/07/test/">test</a></h1>
+      <h1 class="title transition"><a href="/2014/06/07/test/">test</a></h1>
     
   
           <ul>
@@ -99,6 +107,9 @@ document.body.appendChild(script);
               <a href="https://github.com/halfer53" target="_blank">Bruce Tan
               </a>
             </li>
+            <li>
+              <span>With </span>
+              <a href="/2014/06/07/test/#disqus_thread">Comments</a>
           </ul>
         </header>
       
@@ -112,11 +123,9 @@ document.body.appendChild(script);
       </div>
       <footer>
         
-          
-            <div class="alignleft">
-              <a href="/2014/06/07/test/#more" class="more-link">Read More</a>
-            </div>
-          
+          <div class="alignright">
+            <a href="/2014/06/07/test/#more" class="more-link">Continue Reading<i class="fa fa-long-arrow-right fa-1"></i></a>
+          </div>
           
         
         <div class="clearfix"></div>
@@ -137,7 +146,7 @@ document.body.appendChild(script);
           <div class="icon"></div>
             
     
-      <h1 class="title"><a href="/2014/06/06/hello-world/">Hello World</a></h1>
+      <h1 class="title transition"><a href="/2014/06/06/hello-world/">Hello World</a></h1>
     
   
           <ul>
@@ -150,6 +159,9 @@ document.body.appendChild(script);
               <a href="https://github.com/halfer53" target="_blank">Bruce Tan
               </a>
             </li>
+            <li>
+              <span>With </span>
+              <a href="/2014/06/06/hello-world/#disqus_thread">Comments</a>
           </ul>
         </header>
       
@@ -187,7 +199,9 @@ More info: Deployment
       </div>
       <footer>
         
-          
+          <div class="alignright">
+            <a href="/2014/06/06/hello-world/#more" class="more-link">Continue Reading<i class="fa fa-long-arrow-right fa-1"></i></a>
+          </div>
           
         
         <div class="clearfix"></div>
@@ -204,7 +218,7 @@ More info: Deployment
   
   <div class="clearfix"></div>
 </nav>
-</div></div>
+</div>
     <aside id="sidebar" class="alignright">
   <div class="search">
   <form action="//google.com/search" method="get" accept-charset="utf-8">
@@ -214,7 +228,24 @@ More info: Deployment
 </div>
 
   
-<div class="widget tag">
+<div class="widget recent-post">
+  <h3 class="title">Recent Posts</h3>
+  <ul class="entry">
+    
+      <li>
+        <a href="/2014/06/07/test/">test</a>
+      </li>
+    
+      <li>
+        <a href="/2014/06/06/hello-world/">Hello World</a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+<div class="widget category">
   <h3 class="title">Categories</h3>
   <ul class="entry">
   
@@ -227,11 +258,9 @@ More info: Deployment
   
 <div class="widget tag">
   <h3 class="title">Tags</h3>
-  <ul class="entry">
   
-    <li><a href="/tags/test/">test</a><small>1</small></li>
+    <a href="/tags/test/">test<small>1</small></a>
   
-  </ul>
 </div>
 
 </aside>
@@ -242,32 +271,115 @@ More info: Deployment
   &copy; 2014 Bruce Tan
   
 </div>
+
+<div class="alignright">
+	<a href="https://plus.google.com/u/0/104684175089936429154/posts" target="_blank title="bruce tan google plus"><i class="fa fa-google-plus-square"></i></a>
+	<a href="https://github.com/halfer53" target="_blank" title="halfer53 github"><i class="fa fa-github-square"></i></a>	
+	<a href="https://halfer53.github.io/rss2.xml" target="_blank" title="bruce tan blog rss"><i class="fa fa-rss-square"></i></a>
+</div>
+
 <div class="clearfix"></div></footer>
-  <script src="/js/jquery.imagesloaded.min.js"></script>
-<script src="/js/gallery.js"></script>
-
-
-<script type="text/javascript">
-var disqus_shortname = 'halfer53';
-
-(function(){
-  var dsq = document.createElement('script');
-  dsq.type = 'text/javascript';
-  dsq.async = true;
-  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
-  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-}());
-</script>
+  <!--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.0.4/jquery.imagesloaded.js"></script>-->
 
 
 
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
+		<script type="text/javascript">
+		var disqus_shortname = 'halfer53';
+
+		/* * * DON'T EDIT BELOW THIS LINE * * */
+		        (function() {
+		            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		        })();
+		</script>
+
+		<script type="text/javascript">
+		/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+		var disqus_shortname = 'halfer53'; 
+
+		/* * * DON'T EDIT BELOW THIS LINE * * */
+		(function () {
+		var s = document.createElement('script'); s.async = true;
+		s.type = 'text/javascript';
+		s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+		(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+		}());
+		</script>
+
+
+
+<!--<script src="/js/gallery.js"></script>-->
 <script type="text/javascript">
 (function($){
-  $('.fancybox').fancybox();
+  // Caption
+  $('.entry').each(function(i){
+    $(this).find('img').each(function(){
+      var alt = this.alt;
+
+      if (alt){
+        $(this).after('<span class="caption">' + alt + '</span>');
+      }
+
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox" rel="gallery' + i + '" />');
+    });
+  });
+
+  // Gallery
+  var play = function(parent, item, callback){
+    var width = parent.width();
+
+    item.imagesLoaded(function(){
+      var _this = this[0],
+        nWidth = _this.naturalWidth,
+        nHeight = _this.naturalHeight;
+
+      callback();
+      this.animate({opacity: 1}, 500);
+      parent.animate({height: width * nHeight / nWidth}, 500);
+    });
+  };
+
+  $('.gallery').each(function(){
+    var $this = $(this),
+      current = 0,
+      photoset = $this.children('.photoset').children(),
+      all = photoset.length,
+      loading = true;
+
+    play($this, photoset.eq(0), function(){
+      loading = false;
+    });
+
+    $this.on('click', '.prev', function(){
+      if (!loading){
+        var next = (current - 1) % all;
+        loading = true;
+
+        play($this, photoset.eq(next), function(){
+          photoset.eq(current).animate({opacity: 0}, 500);
+          loading = false;
+          current = next;
+        });
+      }
+    }).on('click', '.next', function(){
+      if (!loading){
+        var next = (current + 1) % all;
+        loading = true;
+
+        play($this, photoset.eq(next), function(){
+          photoset.eq(current).animate({opacity: 0}, 500);
+          loading = false;
+          current = next;
+        });
+      }
+    });
+  });
 })(jQuery);
 </script>
+
+
+
 
 </body>
 </html>
