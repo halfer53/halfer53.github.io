@@ -1,12 +1,14 @@
 <!DOCTYPE HTML>
-<html>
+
+<html lang="en">
+  
 <head>
   <meta charset="utf-8">
   
   <title>Diary | Bruce Tan</title>
   <meta name="author" content="Bruce Tan">
   
-  <meta name="description" content="Program|Front-end|html|css">
+  <meta name="description" content="Program|Front-end|html|css|javascript">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -18,10 +20,22 @@
     <meta property="og:image" content="undefined"/>
   
 
+  
+    <meta http-equiv="Content-Language" content="en"/>
+  
+
   <link href="/favicon.png" rel="icon">
-  <link rel="alternate" href="/atom.xml" title="Bruce Tan" type="application/atom+xml">
+  <link rel="alternate" href="https://halfer53.github.io/rss2.xml" title="Bruce Tan" type="application/atom+xml">
   <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+
+  <style type="text/css">
+  /* Tim Pietrusky advanced checkbox hack (Android <= 4.1.2) */
+body{ -webkit-animation: bugfix infinite 1s; }
+@-webkit-keyframes bugfix { from {padding:0;} to {padding:0;} }
+</style>
+
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -36,50 +50,53 @@
 
 
 
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400|Playball' rel='stylesheet' type='text/css'>
+  
+    
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400|Playball' rel='stylesheet' type='text/css'>
+    
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.1.min.js"></script>
 
-<!-- 360 Font CDN in China -->
-<!-- <link href='http://fonts.useso.com/css?family=Open+Sans:300,400|Playball' rel='stylesheet' type='text/css'> -->
+  
 
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
-<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.0.min.js"></script>
-<script>
-if (!window.jQuery) {
-var script = document.createElement('script');
-script.src = "http://libs.baidu.com/jquery/2.0.0/jquery.min.js";
-document.body.appendChild(script);
-}
-</script>
 
 </head>
 
 
 <body>
-  <header id="header" class="inner"><div class="alignleft">
-  <h1><a href="/">Bruce Tan</a></h1>
+  <header id="header" class="inner"><div class="padding">
+	<div class="alignleft logo">
+	  <h1><a href="/">Bruce Tan</a></h1>
+	</div>
+	<nav id="main-nav" class="alignright">
+		<input type="checkbox" id="toggle" />
+		<label for="toggle" class="toggle" data-open="Main Menu" data-close="Close Menu" onclick><i class="fa fa-bars"></i></label>
+	  <ul class="menu">
+	    
+	      <li><a href="/">Home</a></li>
+	    
+	      <li><a href="/archives">Archives</a></li>
+	    
+	    
+	    	<li><a href="https://halfer53.github.io/rss2.xml" target="_blank" title="bruce tan blog rss" class="rss-top"><i class="fa fa-rss"></i></a></li>
+	    
+	  </ul>
+	</nav>
+	<div class="clearfix"></div>
 </div>
-<nav id="main-nav" class="alignright">
-  <ul>
-    
-      <li><a href="/">Home</a></li>
-    
-      <li><a href="/archives">Archives</a></li>
-    
-    <li><a href="https://halfer53.github.io/rss2.xml" target="_blank" title="bruce tan blog rss" class="rss-top"><i class="fa fa-rss"></i></a></li>
-  </ul>
-  <div class="clearfix"></div>
-</nav>
-<div class="clearfix"></div></header>
+</header>
   <div id="page-heading-wrap">
-  	<header class="inner">
-  		
-        <h2>My Personal Blog</h2>
-      
-  	</header>
+  	<div class="inner">
+      <div class="padding">
+    		
+          <h2>My Personal Blog</h2>
+        
+      </div>
+  	</div>
   </div>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft">
+    <div id="main-col" class="alignleft"><div id="wrapper" class="padding">
 <h2 class="archive-title category">Diary</h2>
 
 
@@ -99,17 +116,26 @@ document.body.appendChild(script);
   
           <ul>
             <li>
-              <span>Posted on: </span>
+              <span class="heading-span">Posted on: </span>
               <time datetime="2014-06-06T12:17:24.000Z">07 Jun 2014</time>
             </li>
+            
+              <li>
+                <span class="heading-span">By: </span>
+
+                
+                  <a href="https://github.com/halfer53" target="_blank">Bruce Tan</a>
+
+                
+
+              </li>
+            
             <li>
-              <span>By: </span>
-              <a href="https://github.com/halfer53" target="_blank">Bruce Tan
-              </a>
-            </li>
-            <li>
-              <span>With </span>
-              <a href="/2014/06/07/test/#disqus_thread">Comments</a>
+              <span class="heading-span">With: </span>
+              
+                <a href="/2014/06/07/test/#disqus_thread">Comments</a>
+
+              
           </ul>
         </header>
       
@@ -126,7 +152,6 @@ document.body.appendChild(script);
           <div class="alignright">
             <a href="/2014/06/07/test/#more" class="more-link">Continue Reading<i class="fa fa-long-arrow-right fa-1"></i></a>
           </div>
-          
         
         <div class="clearfix"></div>
       </footer>
@@ -142,16 +167,17 @@ document.body.appendChild(script);
   
   <div class="clearfix"></div>
 </nav>
-</div>
-    <aside id="sidebar" class="alignright">
-  <div class="search">
+</div></div>
+    <aside id="sidebar" class="alignright"><div class="padding">
+	
+	  <div class="search">
   <form action="//google.com/search" method="get" accept-charset="utf-8">
     <input type="search" name="q" results="0" placeholder="Search">
-    <input type="hidden" name="q" value="site:http:halfer53.github.io">
+    <input type="hidden" name="q" value="site:halfer53.github.io">
   </form>
 </div>
-
-  
+	
+	  
 <div class="widget recent-post">
   <h3 class="title">Recent Posts</h3>
   <ul class="entry">
@@ -167,8 +193,8 @@ document.body.appendChild(script);
   </ul>
 </div>
 
-
-  
+	
+	  
 <div class="widget category">
   <h3 class="title">Categories</h3>
   <ul class="entry">
@@ -178,8 +204,8 @@ document.body.appendChild(script);
   </ul>
 </div>
 
-
-  
+	
+	  
 <div class="widget tag">
   <h3 class="title">Tags</h3>
   
@@ -187,30 +213,50 @@ document.body.appendChild(script);
   
 </div>
 
-</aside>
+	
+</div></aside>
     <div class="clearfix"></div>
   </div>
-  <footer id="footer" class="inner"><div class="alignleft">
+  <footer id="footer" class="inner"><div class="padding">
+	<div class="alignleft">
+	  
+	  &copy; 2014 Bruce Tan
+	  
+	  Powerd by <a href="http://hexo.io/" target="_blank">hexo</a>
+	  and Theme by <a href="https://github.com/halfer53/metro-light" target="_blank">metro-light</a>
+	</div>
+
+	<div class="alignright">
+		
+			<a href="https://plus.google.com/u/0//posts" target="_blank title="bruce tan google plus"><i class="fa fa-google-plus-square"></i></a>
+		
+		
+			<a href="https://github.com/halfer53" target="_blank" title="halfer53 github"><i class="fa fa-github-square"></i></a>	
+		
+		
+			<a href="https://twitter.com/halfer53" target="_blank" title="halfer53 github"><i class="fa fa-twitter-square"></i></a>	
+		
+		
+			<a href="http://weibo.com/halfer53" target="_blank" title="halfer53 github"><i class="fa fa-weibo"></i></a>	
+		
+		
+			<a href="https://www.facebook.com/brucetansh" target="_blank" title="halfer53 github"><i class="fa fa-facebook-square"></i></a>	
+		
+		
+			<a href="http://www.renren.com/338011361" target="_blank" title="halfer53 github"><i class="fa fa-renren"></i></a>	
+		
+		
+			<a href="https://halfer53.github.io/rss2.xml" target="_blank" title="bruce tan blog rss"><i class="fa fa-rss-square"></i></a>
+		
+	</div>
+
+	<div class="clearfix"></div>
+</div></footer>
   
-  &copy; 2014 Bruce Tan
-  
-</div>
-
-<div class="alignright">
-	<a href="https://plus.google.com/u/0/104684175089936429154/posts" target="_blank title="bruce tan google plus"><i class="fa fa-google-plus-square"></i></a>
-	<a href="https://github.com/halfer53" target="_blank" title="halfer53 github"><i class="fa fa-github-square"></i></a>	
-	<a href="https://halfer53.github.io/rss2.xml" target="_blank" title="bruce tan blog rss"><i class="fa fa-rss-square"></i></a>
-</div>
-
-<div class="clearfix"></div></footer>
-  <!--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.0.4/jquery.imagesloaded.js"></script>-->
-
-
 
 		<script type="text/javascript">
 		var disqus_shortname = 'halfer53';
 
-		/* * * DON'T EDIT BELOW THIS LINE * * */
 		        (function() {
 		            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
 		            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
@@ -219,10 +265,8 @@ document.body.appendChild(script);
 		</script>
 
 		<script type="text/javascript">
-		/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
 		var disqus_shortname = 'halfer53'; 
 
-		/* * * DON'T EDIT BELOW THIS LINE * * */
 		(function () {
 		var s = document.createElement('script'); s.async = true;
 		s.type = 'text/javascript';
@@ -231,9 +275,12 @@ document.body.appendChild(script);
 		}());
 		</script>
 
+  
 
 
+<!--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.0.4/jquery.imagesloaded.js"></script>-->
 <!--<script src="/js/gallery.js"></script>-->
+
 <script type="text/javascript">
 (function($){
   // Caption
