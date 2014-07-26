@@ -18,7 +18,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', Tahoma, Arial, Roboto, "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", Simsun, sans-self;
+  font-family: font-title;
 }
 h1 {
   font-size: 1.8em;
@@ -684,9 +684,9 @@ article .entry .pullquote {
   font-size: 1.5em;
 }
 article footer {
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   margin-bottom: 40px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 2px solid #eee;
   margin-top: 25px;
   color: #999;
   font-size: 0.9em;
@@ -703,34 +703,6 @@ article footer {
 article footer .share {
   margin-top: 30px;
 }
-article footer a {
-  color: #999;
-}
-article footer a:hover {
-  color: #009cdc;
-  text-decoration: none;
-}
-article footer a:before {
-  font: 1.1em FontAwesome;
-  padding-right: 10px;
-  vertical-align: middle;
-}
-article footer a.more-link {
-  font-style: italic;
-  font-weight: 600;
-  color: #009cdc;
-}
-article footer a.more-link:hover {
-  opacity: 0.6;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
-  filter: alpha(opacity=60);
-}
-article footer a.more-link i {
-  margin-left: 5px;
-}
-article footer a.comment-link:before {
-  content: '\f075';
-}
 article footer .categories,
 article footer .tags {
   position: relative;
@@ -742,6 +714,41 @@ article footer .tags:before {
   position: absolute;
   font: 1.1em FontAwesome;
 }
+article footer .categories a,
+article footer .tags a {
+  color: #999;
+}
+article footer .categories a:hover,
+article footer .tags a:hover {
+  color: #009cdc;
+  text-decoration: none;
+}
+article footer .categories a:before,
+article footer .tags a:before {
+  font: 1.1em FontAwesome;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+article footer .categories a.more-link,
+article footer .tags a.more-link {
+  font-style: italic;
+  font-weight: 600;
+  color: #009cdc;
+}
+article footer .categories a.more-link:hover,
+article footer .tags a.more-link:hover {
+  opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
+}
+article footer .categories a.more-link i,
+article footer .tags a.more-link i {
+  margin-left: 5px;
+}
+article footer .categories.comment-link:before,
+article footer .tags.comment-link:before {
+  content: '\f075';
+}
 article footer .categories:before {
   content: '\f07b';
   top: 2px;
@@ -752,11 +759,26 @@ article footer .tags:before {
   top: 3px;
   left: 2px;
 }
-article footer .addthis {
-  margin-top: 15px;
+article footer .article-nav {
+  margin-top: 10px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
 }
-article footer .addthis iframe {
-  margin-top: 0;
+article footer .article-nav .article-pre,
+article footer .article-nav .article-next {
+  float: left;
+  width: 48%;
+  color: #009cdc;
+  font-weight: normal;
+}
+article footer .article-nav .article-pre a:hover,
+article footer .article-nav .article-next a:hover {
+  color: #444;
+  text-decoration: none;
+}
+article footer .article-nav .article-next {
+  text-align: right;
+  float: right;
 }
 #comment {
   margin-bottom: 50px;
@@ -976,6 +998,11 @@ article footer .addthis iframe {
   #footer .scroll-top {
     bottom: 0;
     right: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #footer .scroll-top {
+    font-size: 40px;
   }
 }
 .entry .gist {
