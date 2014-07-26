@@ -64,7 +64,21 @@ body{ -webkit-animation: bugfix infinite 1s; }
 
   
 
+<script type="text/javascript">
+$(window).scroll(function() {
 
+    if($(this).scrollTop() > 400) {
+        $('.scroll-top').fadeIn(200);
+    } else {
+        $('.scroll-top').fadeOut(200);
+    }
+});
+
+$('.scroll-top').bind('click', function(e) {
+    e.preventDefault();
+    $('body,html').animate({scrollTop:0},200);
+});
+</script>
 
 </head>
 
@@ -409,22 +423,6 @@ body{ -webkit-animation: bugfix infinite 1s; }
 </script>
 
 
-
-<script type="text/javascript">
-$(window).scroll(function() {
-
-    if($(this).scrollTop() > 400) {
-        $('.scroll-top').fadeIn(200);
-    } else {
-        $('.scroll-top').fadeOut(200);
-    }
-});
-
-$('.scroll-top').bind('click', function(e) {
-    e.preventDefault();
-    $('body,html').animate({scrollTop:0},200);
-});
-</script>
 
 
 </body>
