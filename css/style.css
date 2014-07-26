@@ -762,7 +762,7 @@ article footer .tags:before {
 article footer .article-nav {
   margin-top: 10px;
   border-top: 1px solid #eee;
-  padding-top: 20px;
+  padding-top: 15px;
 }
 article footer .article-nav .article-pre,
 article footer .article-nav .article-next {
@@ -966,6 +966,11 @@ article footer .article-nav .article-next {
   color: #999;
   margin-bottom: 50px;
   text-shadow: 0 0 1px #fff;
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+  #footer {
+    margin-bottom: 120px;
+  }
 }
 #footer .alignleft {
   padding-top: 22px;
