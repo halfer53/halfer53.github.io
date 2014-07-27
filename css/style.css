@@ -18,7 +18,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: font-title;
+  font-family: 'Open Sans', Tahoma, Arial, Roboto, "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", Simsun, sans-self;
 }
 h1 {
   font-size: 1.8em;
@@ -43,6 +43,7 @@ a {
   color: #009cdc;
 }
 a:hover {
+  color: #000;
   text-decoration: underline;
 }
 .alignleft {
@@ -135,6 +136,9 @@ a:hover {
 #header .alignleft h1 a {
   font-family: 'Playball', cursive, "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", Simsun, sans-self;
 }
+#header .alignleft h1 a:hover {
+  color: #009cdc;
+}
 @media screen and (max-width: 992px) {
   #header .alignleft h1 a {
     color: #000;
@@ -150,6 +154,7 @@ a:hover {
   font-family: 'Playball', cursive, "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", Simsun, sans-self;
 }
 #header #main-nav {
+  font-family: 'Open Sans', Tahoma, Arial, Roboto, "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", Simsun, sans-self;
   padding-top: 8px;
   letter-spacing: 1px;
 }
@@ -177,18 +182,16 @@ a:hover {
   float: left;
   margin-right: 30px;
   height: 30px;
-  line-height: 30px;
 }
 #header #main-nav ul li .rss-top {
   color: #009cdc;
 }
 #header #main-nav ul li a {
   height: 100%;
+  line-height: 30px;
   display: block;
   font-size: 16px;
   font-weight: 400;
-  line-height: 30px;
-  border-bottom: 1px solid transparent;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -202,13 +205,17 @@ a:hover {
   -ms-transition: all 0.25s linear;
   transition: all 0.25s linear;
 }
-#header #main-nav ul li a:hover,
-#header #main-nav ul li a:focus {
-  -webkit-box-shadow: inset 0px -2px #009cdc;
-  box-shadow: inset 0px -2px #009cdc;
-  -webkit-box-shadow: inset 0px -2px #009cdc;
-  -moz-box-shadow: inset 0px -2px #009cdc;
-  color: #fff;
+@media only screen and (min-width: 992px) {
+  #header #main-nav ul li a {
+    line-height: 20px;
+  }
+  #header #main-nav ul li a:hover,
+  #header #main-nav ul li a:focus {
+    -webkit-box-shadow: inset 0px -2px #009cdc;
+    box-shadow: inset 0px -2px #009cdc;
+    -webkit-box-shadow: inset 0px -2px #009cdc;
+    -moz-box-shadow: inset 0px -2px #009cdc;
+  }
 }
 #toggle,
 .toggle {
@@ -252,7 +259,7 @@ a:hover {
   }
   .menu > li > a:hover,
   .menu > li > a:focus {
-    background: #0090cb;
+    background: #ddd;
   }
   .toggle:after {
     content: 'Main Menu';
@@ -260,10 +267,7 @@ a:hover {
     display: block;
     width: 100%;
     padding: 10px 20px;
-    background: #0090cb;
-    -webkit-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
+    background: #009cdc;
     font-size: 12px;
     color: #fff;
     -webkit-transition: all 0.5s linear;
@@ -302,7 +306,9 @@ a:hover {
     opacity: 1;
     -ms-filter: none;
     filter: none;
-    margin-top: 42px;
+    position: absolute;
+    top: 50px;
+    left: 0;
   }
 }
 #page-heading-wrap {
@@ -338,6 +344,7 @@ a:hover {
   display: inline;
   margin-right: 15px;
   margin-top: 5px;
+  font-weight: 300;
 }
 @media screen and (max-width: 768px) {
   #page-heading-wrap .inner ul li {
@@ -345,10 +352,6 @@ a:hover {
     font-size: 13px;
     line-height: 1.6em;
   }
-}
-#page-heading-wrap .inner ul li .heading-span {
-  color: #444;
-  font-weight: 400;
 }
 #page-heading-wrap .inner ul li time {
   color: #666;
@@ -358,12 +361,13 @@ a:hover {
   color: #009cdc;
 }
 #page-heading-wrap .inner ul li a:hover {
-  opacity: 0.6;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
-  filter: alpha(opacity=60);
+  color: #000;
 }
 article {
   font-weight: 300;
+}
+article a:hover {
+  color: #000;
 }
 article.page {
   padding-left: 20px;
@@ -440,9 +444,7 @@ article .post-content-index header .title a {
   color: #009cdc;
 }
 article .post-content-index header .title a:hover {
-  opacity: 0.6;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
-  filter: alpha(opacity=60);
+  color: #000;
   text-decoration: none;
 }
 article .post-content-index header ul {
@@ -474,15 +476,7 @@ article .post-content-index header ul li a {
   color: #009cdc;
 }
 article .post-content-index header ul li a:hover {
-  opacity: 0.6;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
-  filter: alpha(opacity=60);
-}
-@media screen and (max-width: 541px) {
-  article .post-content-index .entry {
-    height: 200px;
-    overflow: hidden;
-  }
+  color: #000;
 }
 article .gallery {
   overflow: hidden;
@@ -703,6 +697,18 @@ article footer {
 article footer .share {
   margin-top: 30px;
 }
+article footer .alignright .more-link {
+  font-style: italic;
+  font-weight: 600;
+  color: #009cdc;
+}
+article footer .alignright .more-link:hover {
+  color: #000;
+  text-decoration: none;
+}
+article footer .alignright .more-link i {
+  margin-left: 5px;
+}
 article footer .categories,
 article footer .tags {
   position: relative;
@@ -729,22 +735,6 @@ article footer .tags a:before {
   padding-right: 10px;
   vertical-align: middle;
 }
-article footer .categories a.more-link,
-article footer .tags a.more-link {
-  font-style: italic;
-  font-weight: 600;
-  color: #009cdc;
-}
-article footer .categories a.more-link:hover,
-article footer .tags a.more-link:hover {
-  opacity: 0.6;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
-  filter: alpha(opacity=60);
-}
-article footer .categories a.more-link i,
-article footer .tags a.more-link i {
-  margin-left: 5px;
-}
 article footer .categories.comment-link:before,
 article footer .tags.comment-link:before {
   content: '\f075';
@@ -764,16 +754,16 @@ article footer .article-nav {
   border-top: 1px solid #eee;
   padding-top: 15px;
 }
-article footer .article-nav .article-pre,
+article footer .article-nav .article-prev,
 article footer .article-nav .article-next {
   float: left;
   width: 48%;
   color: #009cdc;
   font-weight: normal;
 }
-article footer .article-nav .article-pre a:hover,
+article footer .article-nav .article-prev a:hover,
 article footer .article-nav .article-next a:hover {
-  color: #444;
+  color: #000;
   text-decoration: none;
 }
 article footer .article-nav .article-next {
@@ -892,6 +882,7 @@ article footer .article-nav .article-next {
   margin-bottom: 30px;
 }
 #sidebar .search input {
+  font-family: 'Open Sans', Tahoma, Arial, Roboto, "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", Simsun, sans-self;
   background: #fff;
   font-style: italic;
   font-size: 1em;
@@ -993,7 +984,7 @@ article footer .article-nav .article-next {
   bottom: 50px;
   right: 100px;
   display: none;
-  font-size: 50px;
+  font-size: 70px;
   cursor: pointer;
   opacity: 0.8;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
@@ -1001,8 +992,9 @@ article footer .article-nav .article-next {
 }
 @media screen and (max-width: 992px) {
   #footer .scroll-top {
-    bottom: 0;
-    right: 10px;
+    bottom: 10px;
+    right: 15px;
+    font-size: 50px;
   }
 }
 @media screen and (max-width: 768px) {
