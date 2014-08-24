@@ -5,7 +5,7 @@
 body {
   color: #444;
   font-family: 'Open Sans', Tahoma, Arial, Roboto, "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", Simsun, sans-self;
-  font-size: 14px;
+  font-size: 16px;
 }
 @media screen and (max-width: 768px) {
   body {
@@ -155,7 +155,7 @@ a:hover {
 }
 #header #main-nav {
   font-family: 'Open Sans', Tahoma, Arial, Roboto, "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", Simsun, sans-self;
-  padding-top: 8px;
+  padding-top: 10px;
   letter-spacing: 1px;
 }
 #header #main-nav .toggle {
@@ -544,6 +544,9 @@ article .gallery .next:before {
 article .entry {
   text-align: justify;
   line-height: 1.6;
+}
+article .entry p {
+  word-wrap: break-word;
 }
 article .entry blockquote {
   border-top: 1px solid #ddd;

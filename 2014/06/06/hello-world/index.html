@@ -136,27 +136,19 @@ body{ -webkit-animation: bugfix infinite 1s; }
           <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/tommy351/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick_Start">Quick Start</h2>
 <h3 id="Create_a_new_post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>$ hexo new <span class="string">&quot;My New Post&quot;</span>
-</pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
 
 <p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
 <h3 id="Run_server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>$ hexo server
-</pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
 
 <p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
 <h3 id="Generate_static_files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>$ hexo generate
-</pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
 
 <p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
 <h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>$ hexo deploy
-</pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
 
 <p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 
@@ -285,7 +277,7 @@ body{ -webkit-animation: bugfix infinite 1s; }
 
 	<div class="alignright">
 		
-			<a href="https://plus.google.com/u/0/104684175089936429154/posts" target="_blank title="bruce tan google plus"><i class="fa fa-google-plus-square"></i></a>
+			<a href="https://plus.google.com/u/0/104684175089936430000/posts" target="_blank title="bruce tan google plus"><i class="fa fa-google-plus-square"></i></a>
 		
 		
 			<a href="https://github.com/halfer53" target="_blank" title="halfer53 github"><i class="fa fa-github-square"></i></a>	
@@ -337,76 +329,8 @@ body{ -webkit-animation: bugfix infinite 1s; }
   
 
 
-<!--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.0.4/jquery.imagesloaded.js"></script>-->
-<!--<script src="/js/gallery.js"></script>-->
-
-<script type="text/javascript">
-(function($){
-  // Caption
-  $('.entry').each(function(i){
-    $(this).find('img').each(function(){
-      var alt = this.alt;
-
-      if (alt){
-        $(this).after('<span class="caption">' + alt + '</span>');
-      }
-
-      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox" rel="gallery' + i + '" />');
-    });
-  });
-
-  // Gallery
-  var play = function(parent, item, callback){
-    var width = parent.width();
-
-    item.imagesLoaded(function(){
-      var _this = this[0],
-        nWidth = _this.naturalWidth,
-        nHeight = _this.naturalHeight;
-
-      callback();
-      this.animate({opacity: 1}, 500);
-      parent.animate({height: width * nHeight / nWidth}, 500);
-    });
-  };
-
-  $('.gallery').each(function(){
-    var $this = $(this),
-      current = 0,
-      photoset = $this.children('.photoset').children(),
-      all = photoset.length,
-      loading = true;
-
-    play($this, photoset.eq(0), function(){
-      loading = false;
-    });
-
-    $this.on('click', '.prev', function(){
-      if (!loading){
-        var next = (current - 1) % all;
-        loading = true;
-
-        play($this, photoset.eq(next), function(){
-          photoset.eq(current).animate({opacity: 0}, 500);
-          loading = false;
-          current = next;
-        });
-      }
-    }).on('click', '.next', function(){
-      if (!loading){
-        var next = (current + 1) % all;
-        loading = true;
-
-        play($this, photoset.eq(next), function(){
-          photoset.eq(current).animate({opacity: 0}, 500);
-          loading = false;
-          current = next;
-        });
-      }
-    });
-  });
-})(jQuery);
-</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.0.4/jquery.imagesloaded.js"></script>
+<script src="/js/gallery.js"></script>
 
 
 
