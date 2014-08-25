@@ -10,7 +10,8 @@ body {
 }
 @media screen and (max-width: 768px) {
   body {
-    font-size: 13px;
+    font-size: 18px;
+    line-height: 1.5;
   }
 }
 h1,
@@ -129,8 +130,7 @@ a:hover {
 }
 @media screen and (max-width: 992px) {
   #header .alignleft h1 {
-    font-size: 3em;
-    line-height: 3em;
+    padding: 35px 0;
     margin-top: 50px;
   }
 }
@@ -184,6 +184,12 @@ a:hover {
   margin-right: 30px;
   height: 30px;
 }
+@media screen and (max-width: 768px) {
+  #header #main-nav ul li {
+    margin-right: 0;
+    height: 34px;
+  }
+}
 #header #main-nav ul li .rss-top {
   color: #009cdc;
 }
@@ -191,7 +197,7 @@ a:hover {
   height: 100%;
   line-height: 30px;
   display: block;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 400;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -335,13 +341,13 @@ a:hover {
 #page-heading-wrap .inner h1,
 #page-heading-wrap .inner h2 {
   color: #000;
-  font-size: 28px;
+  font-size: 1.75em;
   font-weight: 300;
   line-height: 1.4em;
 }
 #page-heading-wrap .inner ul {
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 0.8em;
   list-style: none;
 }
 #page-heading-wrap .inner ul li {
@@ -353,8 +359,8 @@ a:hover {
 @media screen and (max-width: 768px) {
   #page-heading-wrap .inner ul li {
     display: block;
-    font-size: 13px;
-    line-height: 1.6em;
+    margin-top: 0;
+    line-height: 22px;
   }
 }
 #page-heading-wrap .inner ul li time {
@@ -441,7 +447,7 @@ article .post-content-index header .icon:before {
   text-align: center;
 }
 article .post-content-index header .title {
-  font-size: 28px;
+  font-size: px;
   font-weight: 300;
 }
 article .post-content-index header .title a {
@@ -453,7 +459,6 @@ article .post-content-index header .title a:hover {
 }
 article .post-content-index header ul {
   margin-top: 3px;
-  font-size: 14px;
   list-style: none;
 }
 article .post-content-index header ul li {
@@ -463,7 +468,7 @@ article .post-content-index header ul li {
 @media screen and (max-width: 768px) {
   article .post-content-index header ul li {
     display: block;
-    font-size: 12px;
+    font-size: 0.8em;
     line-height: 22px;
   }
 }
@@ -547,7 +552,8 @@ article .gallery .next:before {
 }
 article .entry {
   text-align: justify;
-  line-height: 1.6;
+  line-height: 1.5;
+  letter-spacing: 0.01rem;
 }
 article .entry p {
   word-wrap: break-word;
