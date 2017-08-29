@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Vivian Li and Bruce Tan</title>
+    <title>Flower</title>
 
     <style type="text/css">
         html {
@@ -94,10 +94,16 @@
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="garden_dev.js"></script>
     <script type="text/javascript" src="functions_dev.js"></script>
-
+    <!-- <script src="snowstorm-min.js"></script>
+    <script>
+        snowStorm.flakesMax = 128;
+        snowStorm.followMouse = false;
+        snowStorm.flakeWidth = 25;
+        snowStorm.flakeHeight = 25;
+    </script> -->
     <style type="text/css">
          :root #content>#right>.dose>.dosesingle,
-        :root #content>#center>.dose>.dosesingle {
+         :root #content>#center>.dose>.dosesingle {
             display: none !important;
         }
     </style>
@@ -106,32 +112,35 @@
 <body>
     <div id="mainDiv">
         <div id="content">
-            <div id="code">
-                Girl you = <span class="keyword">new</span> Girl(<span class="string">"Vivian Li"</span>);<br> Boy I = <span class="keyword">new</span> Boy(<span class="string">"Bruce Tan"</span>);<br>
-                <span class="comments">//1st June 2016, I saw u </span><br> I.saw(you);
-                <br>
-                <span class="comments">// 12th July 2016, it was our first date</span><br> I.dated(you);
-                <br>
-                <span class="comments">// 27th July 2016, the Potato Cake was good</span><br> I.like(you);
-                <br>
-                <span class="comments">// 9th August 2016, we held hands together</span><br> I.heldHandsWith(you);
-                <br>
-                <span class="comments">// I miss you everyday</span><br> I.miss(you);
-                <br>
-                <span class="comments">// Today is your birthday</span><br>
-                <span class="comments">// I can't believe that 3 months has already passed since I saw you for the first time</span><br>
-                <span class="comments">// There are times, when we were together and I looked at your face,</span><br>
-                <span class="comments">// the way you smile, the way we appreciate each other, the laughter, etc.</span><br>
-                <span class="comments">// I don't know how to describe that feeling, but I know one thing for sure</span><br> I.LOVE(u);
-                <br> Couple we = <span class="keyword">new</span> Couple(<span class="string">you,I</span>);<br> we.celebrate(you.getBirthday());
-            </div>
+            <!-- <div id="code">
+				Girl you = <span class="keyword">new</span> Girl(<span class="string">"Vivian Li"</span>);<br>
+				Boy I = <span class="keyword">new</span> Boy(<span class="string">"Bruce Tan"</span>);<br>
+				<span class="comments">//1st June 2016, I saw u </span><br>
+				I.saw(you);<br>
+				<span class="comments">// 12th July 2016, it was our first date</span><br>
+				I.dated(you);<br>
+				<span class="comments">// 27th July 2016, the Potato Cake was good</span><br>
+				I.like(you);<br>
+				<span class="comments">// 9th August 2016, we held hands together</span><br>
+				I.heldHandsWith(you);<br>
+				<span class="comments">// I miss you everyday</span><br>
+				I.miss(you);<br>
+				<span class="comments">// Today is your birthday</span><br>
+				<span class="comments">// I can't believe that 3 months has already passed since I saw you for the first time</span><br>
+				<span class="comments">// There are times, when we were together and I looked at your face,</span><br>
+				<span class="comments">// the way you smile, the way we appreciate each other, the laughter, etc.</span><br>
+				<span class="comments">// I don't know how to describe that feeling, but I know one thing for sure</span><br>
+				I.LOVE(u);<br>
+				Couple we = <span class="keyword">new</span> Couple(<span class="string">you,I</span>);<br>
+				we.celebrate(you.getBirthday());
+			</div> -->
             <div id="loveHeart">
                 <canvas id="garden"></canvas>
-                <div id="words">
+                <!-- <div id="words">
                     <div id="messages">
                         Vivian, I Love you
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <div id="copyright">
@@ -145,7 +154,7 @@
         setTimeout(function() {
             adjustWordsPosition();
             startHeartAnimation();
-        }, 5000);
+        }, 3000);
 
 
         adjustCodePosition();
