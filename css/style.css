@@ -422,7 +422,7 @@ article .post-content-index {
   }
 }
 article .post-content-index header {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 @media screen and (max-width: 768px) {
   article .post-content-index header {
