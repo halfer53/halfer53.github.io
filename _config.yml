@@ -8,7 +8,7 @@ subtitle: My Personal Blog
 description: Program|Front-end|html|css|javascript
 author: Bruce Tan
 email: brucetansh@gmail.com
-language: en
+language: default
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -41,7 +41,7 @@ highlight:
   tab_replace:
 
 # Category & Tag
-default_category: programming
+default_category: uncategorized
 category_map:
 tag_map:
 

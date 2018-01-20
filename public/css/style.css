@@ -411,7 +411,7 @@ article .post-content {
   position: relative;
 }
 article .post-content-index {
-  padding: 0 20px 0 77px;
+  padding: 0 20px 0 0;
   margin-bottom: 50px;
   position: relative;
 }
@@ -451,14 +451,13 @@ article .post-content-index header .icon:before {
   width: 32px;
   text-align: center;
 }
-article .post-content-index header .title {
-  font-size: px;
+article .post-content-index header .metro-title {
   font-weight: 300;
 }
-article .post-content-index header .title a {
+article .post-content-index header .metro-title a {
   color: #009cdc;
 }
-article .post-content-index header .title a:hover {
+article .post-content-index header .metro-title a:hover {
   color: #000;
   text-decoration: none;
 }
@@ -595,7 +594,6 @@ article .entry code {
   margin: 0 2px;
   font-size: 0.9em;
   border: 1px solid #ddd;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 article .entry pre {
@@ -604,7 +602,6 @@ article .entry pre {
   margin-top: 15px;
   overflow: auto;
   padding: 7px 15px;
-  -webkit-border-radius: 2px;
   border-radius: 2px;
 }
 article .entry pre code {
@@ -612,7 +609,6 @@ article .entry pre code {
   padding: 0;
   margin: 0;
   border: none;
-  -webkit-border-radius: 0;
   border-radius: 0;
 }
 article .entry ul,
@@ -1018,7 +1014,6 @@ article footer .article-nav .article-next {
   border: 1px solid #ddd;
   margin-top: 15px;
   padding: 7px 15px;
-  -webkit-border-radius: 2px;
   border-radius: 2px;
   text-shadow: 0 0 1px #fff;
   line-height: 1.6;
@@ -1058,7 +1053,6 @@ figure.highlight {
   border: 1px solid #ddd;
   margin-top: 15px;
   padding: 7px 15px;
-  -webkit-border-radius: 2px;
   border-radius: 2px;
   text-shadow: 0 0 1px #fff;
   line-height: 1.6;
@@ -1162,4 +1156,46 @@ pre .clojure .title {
 }
 pre .deletion {
   color: #dc322f;
+}
+/* playball-regular - latin */
+@font-face {
+  font-family: 'Playball';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Playball'), local('Playball-Regular'), url("/fonts/playball-v7-latin-regular.woff2") format('woff2'), url("/fonts/playball-v7-latin-regular.woff") format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* open-sans-300 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url("../fonts/open-sans-v15-latin-300.woff2") format('woff2'), url("../fonts/open-sans-v15-latin-300.woff") format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url("../fonts/open-sans-v15-latin-regular.woff2") format('woff2'), url("../fonts/open-sans-v15-latin-regular.woff") format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* open-sans-600 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url("../fonts/open-sans-v15-latin-600.woff2") format('woff2'), url("../fonts/open-sans-v15-latin-600.woff") format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* open-sans-700 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url("../fonts/open-sans-v15-latin-700.woff2") format('woff2'), url("../fonts/open-sans-v15-latin-700.woff") format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* open-sans-800 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url("../fonts/open-sans-v15-latin-800.woff2") format('woff2'), url("../fonts/open-sans-v15-latin-800.woff") format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }

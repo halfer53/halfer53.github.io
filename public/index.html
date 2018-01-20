@@ -17,7 +17,7 @@
   <meta property="og:site_name" content="Bruce Tan"/>
 
   
-    <meta property="og:image" content="undefined"/>
+    <meta property="og:image" content=""/>
   
 
   
@@ -59,16 +59,6 @@ body{ -webkit-animation: bugfix infinite 1s; }
 </script>
 
 
-
-
-  
-    
-      <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400|Playball' rel='stylesheet' type='text/css'>
-    
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.1.min.js"></script>
-
-  
 
 
 
@@ -115,16 +105,16 @@ body{ -webkit-animation: bugfix infinite 1s; }
   
       
         <header>
-          <div class="icon"></div>
+          <!-- <div class="icon"></div> -->
             
     
-      <h1 class="title transition"><a href="/2014/09/07/hello-world/">Hello World</a></h1>
+      <h1 class="metro-title transition"><a href="/2018/01/21/Leetcode-Q9/">Leetcode Q9</a></h1>
     
   
           <ul>
             <li>
               <span class="heading-span">Posted on: </span>
-              <time datetime="2014-09-07T05:19:29.000Z">07 Sep 2014</time>
+              <time datetime="2018-01-20T14:58:33.000Z">21 Jan 2018</time>
             </li>
             
               <li>
@@ -140,7 +130,7 @@ body{ -webkit-animation: bugfix infinite 1s; }
             <li>
               <span class="heading-span">With: </span>
               
-                <a href="/2014/09/07/hello-world/#disqus_thread">Comments</a>
+                <a href="/2018/01/21/Leetcode-Q9/#disqus_thread">Comments</a>
 
               
           </ul>
@@ -149,24 +139,8 @@ body{ -webkit-animation: bugfix infinite 1s; }
       <div class="entry">
         
           
-            <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2>
-<h3 id="Create_a_new_post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+            <p>[<a href="https://leetcode.com/problems/palindrome-number/description/" target="_blank" rel="noopener">https://leetcode.com/problems/palindrome-number/description/</a>]</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isPalindrome</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(x == <span class="number">0</span>)</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        <span class="keyword">if</span>(x &lt; <span class="number">0</span>)</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        <span class="keyword">long</span> rev = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> val = x;</span><br><span class="line">        <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>( val!= <span class="number">0</span>)&#123;</span><br><span class="line">            rev = rev * <span class="number">10</span> + val % <span class="number">10</span>;</span><br><span class="line">            val /= <span class="number">10</span>;</span><br><span class="line">            count++;</span><br><span class="line">            <span class="keyword">if</span>( rev &gt; Integer.MAX_VALUE || rev &lt; Integer.MIN_VALUE)</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> irev = (<span class="keyword">int</span>)rev;</span><br><span class="line">        <span class="keyword">while</span>(x != irev)&#123;</span><br><span class="line">            <span class="keyword">int</span> shift = count * <span class="number">10</span>;</span><br><span class="line">            <span class="keyword">int</span> left = irev / shift;</span><br><span class="line">            <span class="keyword">int</span> right = x % <span class="number">10</span>;</span><br><span class="line">            <span class="keyword">if</span>( left != right)</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">            x/= <span class="number">10</span>;</span><br><span class="line">            irev /= shift;</span><br><span class="line">            count--;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
           
         
@@ -174,67 +148,7 @@ body{ -webkit-animation: bugfix infinite 1s; }
       <footer>
         
           <div class="alignright">
-            <a href="/2014/09/07/hello-world/#more" class="more-link">Continue Reading<i class="fa fa-long-arrow-right fa-1"></i></a>
-          </div>
-        
-        <div class="clearfix"></div>
-      </footer>
-    </div>
-</article>
-
-
-
-
-  <article class="post">
-  
-  
-    <div class="post-content-index">
-  
-      
-        <header>
-          <div class="icon"></div>
-            
-    
-      <h1 class="title transition"><a href="/2014/06/07/test/">test</a></h1>
-    
-  
-          <ul>
-            <li>
-              <span class="heading-span">Posted on: </span>
-              <time datetime="2014-06-06T12:17:24.000Z">07 Jun 2014</time>
-            </li>
-            
-              <li>
-                <span class="heading-span">By: </span>
-
-                
-                  <a href="https://github.com/halfer53" target="_blank">Bruce Tan</a>
-
-                
-
-              </li>
-            
-            <li>
-              <span class="heading-span">With: </span>
-              
-                <a href="/2014/06/07/test/#disqus_thread">Comments</a>
-
-              
-          </ul>
-        </header>
-      
-      <div class="entry">
-        
-          
-            <p>foreigners? for his name of my flocks, and all that they conceived when the midst of silver. Behold, the Egyptian? And Sarah as Joseph said unto her. And I will establish my people that Abraham a daughter, and shall help meet thee, neither thy bosom. And she said, Whose daughter of Edom. And there shall not depart from the Amorite, and for man brought him out. And the men were fulfilled for a pillar of heaven to the signet, and all the Egyptians dead out of a strife between me with violence. And Rebekah said unto me; and humbled her.</p>
-<p>
-          
-        
-      </div>
-      <footer>
-        
-          <div class="alignright">
-            <a href="/2014/06/07/test/#more" class="more-link">Continue Reading<i class="fa fa-long-arrow-right fa-1"></i></a>
+            <a href="/2018/01/21/Leetcode-Q9/#more" class="more-link">Continue Reading<i class="fa fa-long-arrow-right fa-1"></i></a>
           </div>
         
         <div class="clearfix"></div>
@@ -266,11 +180,7 @@ body{ -webkit-animation: bugfix infinite 1s; }
   <ul class="entry">
     
       <li>
-        <a href="/2014/09/07/hello-world/">Hello World</a>
-      </li>
-    
-      <li>
-        <a href="/2014/06/07/test/">test</a>
+        <a href="/2018/01/21/Leetcode-Q9/">Leetcode Q9</a>
       </li>
     
   </ul>
@@ -282,20 +192,13 @@ body{ -webkit-animation: bugfix infinite 1s; }
   <h3 class="title">Categories</h3>
   <ul class="entry">
   
-    <li><a href="/categories/Diary/">Diary</a><small>1</small></li>
+    <li><a href="/categories/Leetcode/">Leetcode</a><small>1</small></li>
   
   </ul>
 </div>
 
 	
 	  
-<div class="widget tag">
-  <h3 class="title">Tags</h3>
-  
-    <a href="/tags/test/">test<small>1</small></a>
-  
-</div>
-
 	
 </div></aside>
     <div class="clearfix"></div>
@@ -303,7 +206,7 @@ body{ -webkit-animation: bugfix infinite 1s; }
   <footer id="footer" class="inner"><div class="padding">
 	<div class="alignleft">
 	  
-	  &copy; 2014 Bruce Tan
+	  &copy; 2018 Bruce Tan
 	  
 	  Powerd by <a href="http://hexo.io/" target="_blank">hexo</a>
 	  and Theme by <a href="https://github.com/halfer53/metro-light" target="_blank">metro-light</a>
@@ -328,7 +231,14 @@ body{ -webkit-animation: bugfix infinite 1s; }
 	<div class="clearfix"></div>
 </div>
 
-<div class="scroll-top"><i class="fa fa-arrow-circle-up"></i></div></footer>
+<div class="scroll-top"><i class="fa fa-arrow-circle-up"></i></div>
+
+
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.1.min.js"></script>
+
+</footer>
   
 
 		<script type="text/javascript">
