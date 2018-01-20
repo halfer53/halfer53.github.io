@@ -1,0 +1,5 @@
+#!/bin/bash
+git add .
+git commit -m "hexo backup"
+git push origin hexo
+hexo deploy

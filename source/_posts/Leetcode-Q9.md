@@ -6,7 +6,7 @@ categories:
 tags:
 ---
 
-[https://leetcode.com/problems/palindrome-number/description/]
+https://leetcode.com/problems/palindrome-number/description/
 
 
 ```java
