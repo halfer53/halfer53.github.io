@@ -83,6 +83,8 @@ disqus_shortname: halfer53
 theme: metro-light
 exclude_generator:
 
+all_minifier: true
+
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
