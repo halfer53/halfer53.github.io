@@ -61,7 +61,8 @@ body{ -webkit-animation: bugfix infinite 1s; }
 
 
 
-
+  
+  
 </head>
 
 
@@ -130,6 +131,7 @@ body{ -webkit-animation: bugfix infinite 1s; }
       <div class="entry">
         
           <p><a href="https://leetcode.com/problems/palindrome-number/description/" target="_blank" rel="noopener">https://leetcode.com/problems/palindrome-number/description/</a></p>
+<p><strong>abc</strong></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isPalindrome</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(x == <span class="number">0</span>)</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        <span class="keyword">if</span>(x &lt; <span class="number">0</span>)</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        <span class="keyword">long</span> rev = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> val = x;</span><br><span class="line">        <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>( val!= <span class="number">0</span>)&#123;</span><br><span class="line">            rev = rev * <span class="number">10</span> + val % <span class="number">10</span>;</span><br><span class="line">            val /= <span class="number">10</span>;</span><br><span class="line">            count++;</span><br><span class="line">            <span class="keyword">if</span>( rev &gt; Integer.MAX_VALUE || rev &lt; Integer.MIN_VALUE)</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> irev = (<span class="keyword">int</span>)rev;</span><br><span class="line">        <span class="keyword">while</span>(x != irev)&#123;</span><br><span class="line">            <span class="keyword">int</span> shift = count * <span class="number">10</span>;</span><br><span class="line">            <span class="keyword">int</span> left = irev / shift;</span><br><span class="line">            <span class="keyword">int</span> right = x % <span class="number">10</span>;</span><br><span class="line">            <span class="keyword">if</span>( left != right)</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">            x/= <span class="number">10</span>;</span><br><span class="line">            irev /= shift;</span><br><span class="line">            count--;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
         
@@ -145,6 +147,8 @@ body{ -webkit-animation: bugfix infinite 1s; }
           
           <div class="share">
   
+
+    
 
     
 
@@ -255,18 +259,11 @@ body{ -webkit-animation: bugfix infinite 1s; }
 	<div class="clearfix"></div>
 </div>
 
-<div class="scroll-top"><i class="fa fa-arrow-circle-up"></i></div>
-
-
-
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.1.min.js"></script>
-
-</footer>
+<div class="scroll-top"><i class="fa fa-arrow-circle-up"></i></div></footer>
   
 
 		<script type="text/javascript">
-		var disqus_shortname = 'halfer53';
+				var disqus_shortname = 'halfer53';
 
 		        (function() {
 		            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -276,17 +273,22 @@ body{ -webkit-animation: bugfix infinite 1s; }
 		</script>
 
 		<script type="text/javascript">
-		var disqus_shortname = 'halfer53'; 
+				var disqus_shortname = 'halfer53'; 
 
-		(function () {
-		var s = document.createElement('script'); s.async = true;
-		s.type = 'text/javascript';
-		s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-		(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-		}());
+				(function () {
+					var s = document.createElement('script'); s.async = true;
+					s.type = 'text/javascript';
+					s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+					(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+				}());
 		</script>
 
   
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.css" rel='stylesheet' type='text/css'>
+
 
 
 <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.0.4/jquery.imagesloaded.js"></script> -->
