@@ -8,7 +8,6 @@ tags:
 
 https://leetcode.com/problems/palindrome-number/description/
 
-
 ```java
 class Solution {
     public boolean isPalindrome(int x) {
