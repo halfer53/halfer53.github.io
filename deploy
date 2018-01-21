@@ -1,4 +1,9 @@
 #!/bin/bash
+cd themes/metro-light
+git add .
+git commit -m "save metro"
+git push origin halfer53
+cd -
 git add .
 git commit -m "hexo backup"
 git push origin hexo
