@@ -66,7 +66,7 @@ function getGithubStars(user, limit, callback){
             url: url,
             data: JSON.stringify({"query":query,"variables":"{}"}),
             headers: {
-                Authorization: "Bearer 9b1b997d58240f255469cc413cb7bcedb8fd4e59"
+                Authorization: "Bearer de46cdf580508f5d147e3ce865872abde73da46d"
               },
             contentType: "application/json",
             method: "POST",
@@ -75,7 +75,7 @@ function getGithubStars(user, limit, callback){
         })).then(function(raw_data, textStatus, jqXHR){
             data = raw_data['data']
             if(!data){
-                error = data['errors'][0]
+                error = raw_data['errors'][0]
                 console.error(error.message)
             }
             cb(data)
