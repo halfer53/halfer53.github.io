@@ -115,6 +115,65 @@ body{ -webkit-animation: bugfix infinite 1s; }
           <!-- <div class="icon"></div> -->
             
     
+      <h1 class="metro-title transition"><a href="/2018/01/23/leetcode-Q2/">leetcode Q2</a></h1>
+    
+  
+          <ul>
+            <li>
+              <span class="heading-span">Posted on: </span>
+              <time datetime="2018-01-22T11:58:28.000Z">23 Jan 2018</time>
+            </li>
+            
+              <li>
+                <span class="heading-span">By: </span>
+
+                
+                  <a href="https://github.com/halfer53" target="_blank">Bruce Tan</a>
+
+                
+
+              </li>
+            
+            <li>
+              <span class="heading-span">With: </span>
+              
+                <a href="/2018/01/23/leetcode-Q2/#disqus_thread">Comments</a>
+
+              
+          </ul>
+        </header>
+      
+      <div class="entry">
+        
+          
+            <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * public class ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode next;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x) &#123; val = x; &#125;</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">addTwoNumbers</span><span class="params">(ListNode l1, ListNode l2)</span> </span>&#123;</span><br><span class="line">        ListNode dummy = <span class="keyword">new</span> ListNode(<span class="number">0</span>);</span><br><span class="line">        ListNode curr = dummy;</span><br><span class="line">        <span class="keyword">int</span> carry = <span class="number">0</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span>( l1 != <span class="keyword">null</span> || l2 != <span class="keyword">null</span>)&#123;</span><br><span class="line">            <span class="keyword">int</span> l1i = l1 != <span class="keyword">null</span> ? l1.val : <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">int</span> l2i = l2 != <span class="keyword">null</span> ? l2.val : <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">int</span> combine = (l1i + l2i) + carry;</span><br><span class="line">            <span class="keyword">int</span> newval = combine % <span class="number">10</span>;</span><br><span class="line">            carry = combine / <span class="number">10</span>;</span><br><span class="line">            </span><br><span class="line">            ListNode tmp = <span class="keyword">new</span> ListNode(newval);</span><br><span class="line">            </span><br><span class="line">            curr.next = tmp;</span><br><span class="line">            curr = tmp;</span><br><span class="line">            <span class="keyword">if</span>(l1 != <span class="keyword">null</span>)</span><br><span class="line">                l1 = l1.next;</span><br><span class="line">            <span class="keyword">if</span>(l2 != <span class="keyword">null</span>)</span><br><span class="line">                l2 = l2.next;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span>(carry != <span class="number">0</span>)&#123;</span><br><span class="line">            curr.next = <span class="keyword">new</span> ListNode(carry);</span><br><span class="line">        &#125;</span><br><span class="line">            </span><br><span class="line">        <span class="keyword">return</span> dummy.next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
+        
+      </div>
+      <footer>
+        
+          <div class="alignright">
+            <a href="/2018/01/23/leetcode-Q2/#more" class="more-link">Continue Reading<i class="fa fa-long-arrow-right fa-1"></i></a>
+          </div>
+        
+        <div class="clearfix"></div>
+      </footer>
+    </div>
+</article>
+
+
+
+  
+    <article class="post">
+  
+  
+    <div class="post-content-index">
+  
+      
+        <header>
+          <!-- <div class="icon"></div> -->
+            
+    
       <h1 class="metro-title transition"><a href="/2018/01/23/Leetcode-Q1/">Leetcode Q1</a></h1>
     
   
@@ -252,6 +311,10 @@ body{ -webkit-animation: bugfix infinite 1s; }
   <ul class="entry">
     
       <li>
+        <a href="/2018/01/23/leetcode-Q2/">leetcode Q2</a>
+      </li>
+    
+      <li>
         <a href="/2018/01/23/Leetcode-Q1/">Leetcode Q1</a>
       </li>
     
@@ -268,7 +331,7 @@ body{ -webkit-animation: bugfix infinite 1s; }
   <h3 class="title">Categories</h3>
   <ul class="entry">
   
-    <li><a href="/categories/Leetcode/">Leetcode</a><small>2</small></li>
+    <li><a href="/categories/Leetcode/">Leetcode</a><small>3</small></li>
   
   </ul>
 </div>
