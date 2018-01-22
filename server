@@ -1,0 +1,20 @@
+#!/bin/bash
+trap ctrl_c INT
+
+hexo generate --watch 2>/dev/null &
+gen_pid=$!
+hexo server 2>/dev/null &
+server_pid=$!
+
+echo "hexo generate pid $gen_pid"
+echo "hexo server pid $server_pid"
+echo "server script pid $$"
+
+function ctrl_c(){
+    echo 'server termianted'
+    kill -INT $gen_pid
+    kill -INT $server_pid
+}
+
+cat
+exit
