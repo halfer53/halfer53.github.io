@@ -5,7 +5,7 @@
 # Site
 title: Bruce Tan
 subtitle: My Personal Blog
-description: Program|Front-end|html|css|javascript
+description: Programming|kernel|OS|System
 author: Bruce Tan
 email: brucetansh@gmail.com
 language: default
@@ -82,8 +82,6 @@ disqus_shortname: halfer53
 ## Themes: https://github.com/tommy351/hexo/wiki/Themes
 theme: metro-light
 exclude_generator:
-
-all_minifier: true
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
