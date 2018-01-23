@@ -406,6 +406,7 @@ article.link .title a:after {
 article .post-content {
   margin-bottom: 50px;
   position: relative;
+  padding-right: 40px;
 }
 article .post-content-index {
   padding: 0 20px 0 0;
