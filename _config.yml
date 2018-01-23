@@ -83,12 +83,19 @@ disqus_shortname: halfer53
 theme: metro-light
 exclude_generator:
 
-# Deployment
-## Docs: http://hexo.io/docs/deployment.html
 deploy:
+  # type: s3-cloudfront
+  # bucket: www.brucetansh.com
+  # region: ap-southeast-2
+  # cf_distribution: EK8ID5LPH9GUN
   type: git
   repository: https://github.com/halfer53/halfer53.github.io.git
   branch: master
+
+# Deployment
+## Docs: http://hexo.io/docs/deployment.html
+# deploy:
+
 
 feed:
     type: atom
