@@ -4,6 +4,7 @@ git add .
 git commit -m "save metro"
 git push origin halfer53
 cd -
+hexo generate
 git add .
 git commit -m "hexo backup"
 git push origin hexo
