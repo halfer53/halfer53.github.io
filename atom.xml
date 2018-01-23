@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://halfer53.github.io/"/>
-  <updated>2018-01-22T12:21:55.000Z</updated>
+  <updated>2018-01-23T01:34:42.000Z</updated>
   <id>https://halfer53.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode Q3</title>
+    <link href="https://halfer53.github.io/2018/01/23/Leetcode-Q3/"/>
+    <id>https://halfer53.github.io/2018/01/23/Leetcode-Q3/</id>
+    <published>2018-01-23T01:31:54.000Z</published>
+    <updated>2018-01-23T01:34:42.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>There are basically two options here</p><ol><li>O(n^3), loop through every possibility to find the longest substring</li><li>Use a hashmap to indicate the position of each character. If a replicate character is encountered, and is contained in the current substring, current substring will be updated such that it will start from one character next to the previous one, curr count will be updated accordingly.</li></ol><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">lengthOfLongestSubstring</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">        HashMap&lt;Character, Integer&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        <span class="keyword">int</span> longest = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> curr = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> prev = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i &lt; s.length(); i++)&#123;</span><br><span class="line">            <span class="keyword">char</span> c = s.charAt(i);</span><br><span class="line">            <span class="keyword">if</span>(map.get(c) != <span class="keyword">null</span> &amp;&amp; map.get(c) &gt;= prev)&#123;</span><br><span class="line">                prev = map.get(c);</span><br><span class="line">                map.put(c, i);</span><br><span class="line">                longest = Math.max(curr, longest);</span><br><span class="line">                curr = i - prev;</span><br><span class="line">                prev++;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                map.put(c, i);</span><br><span class="line">                curr++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        longest = Math.max(curr, longest);</span><br><span class="line">        <span class="keyword">return</span> longest;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;There are basically two options here&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;O(n^3), loop through every possibility to find the longest substring&lt;/li&gt;
+&lt;li&gt;Use a has
+      
+    
+    </summary>
+    
+      <category term="Leetcode" scheme="https://halfer53.github.io/categories/Leetcode/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>leetcode Q2</title>
