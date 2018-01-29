@@ -3,16 +3,8 @@ title: About
 date: 2018-01-22 18:33:09
 ---
 
-Hi I am a Solution Architect Intern at Amazon Web Services. 
+Hi I am a Solution Architect Intern at Amazon Web Services. I love doing coding, I usually have some side projects to work on during spare time. Recently I just finished my own OS project <https://github.com/halfer53/metro-light>
 
-
-I am huge fan of OS, as demonstrated by the fact that I am write my own OS [Link](https://github.com/halfer53/winix) and I am a Linux kernel contributor.
-
-
-Please contact if you have any interesting project to work on :)
-
-
-My github page: <https://github.com/halfer53>
-
-
-My email: brucetansh@gmail.com
+  - Github: <https://github.com/halfer53>
+  - Linkedin: <https://www.linkedin.com/in/brucetan53/>
+  - Email: <brucetansh@gmail.com>

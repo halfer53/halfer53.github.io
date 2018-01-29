@@ -76,6 +76,7 @@ pagination_dir: page
 
 # Disqus
 disqus_shortname: halfer53
+github_username: halfer53
 
 # Extensions
 ## Plugins: https://github.com/tommy351/hexo/wiki/Plugins
