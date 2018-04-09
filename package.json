@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "3.5.0"
+    "version": "3.7.0"
   },
   "dependencies": {
     "graphql.js": "^0.4.20",
@@ -21,6 +21,7 @@
     "hexo-renderer-stylus": "^0.3.3",
     "hexo-server": "^0.2.0",
     "jslint": "^0.11.0",
+    "renderer": "^0.1.5",
     "uglify-js": "^3.3.9"
   }
 }
