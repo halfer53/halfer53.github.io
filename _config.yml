@@ -5,7 +5,7 @@
 # Site
 title: Bruce Tan
 subtitle: My Personal Blog
-description: Programming|kernel|OS|System
+description: Programming|Leetcode|Empirical Network Analysis
 author: Bruce Tan
 email: brucetansh@gmail.com
 language: default
@@ -91,12 +91,12 @@ deploy:
   cf_distribution: EK8ID5LPH9GUN
   headers: '{
 	"list": [{
-		"fileFilter": ["*.js", "*.css", "*.woff2"],
+		"fileFilter": ["!*.html", "!*.md"],
 		"headers": {
-			"CacheControl": "max-age=604800"
+			"CacheControl": "max-age=86400"
 		}
 	}, {
-		"fileFilter": ["!*.js", "!*.css", "!*.woff2"],
+		"fileFilter": ["*.html", "*.md"],
 		"headers": {
 			"CacheControl": "no-cache, no-store"
 		}
