@@ -84,6 +84,7 @@ github_username: halfer53
 theme: metro-light
 exclude_generator:
 
+
 deploy:
   type: s3-cloudfront
   bucket: www.brucetansh.com

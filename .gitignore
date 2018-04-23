@@ -3,5 +3,6 @@ Thumbs.db
 db.json
 *.log
 node_modules/
+cache-s3-cf-deploy/
 public/
-.deploy*/
+deploy*/
