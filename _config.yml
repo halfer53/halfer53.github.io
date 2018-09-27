@@ -90,9 +90,7 @@ deploy:
   bucket: www.brucetansh.com
   region: ap-southeast-2
   cf_distribution: EK8ID5LPH9GUN
-  headers: '{
-    "list": []
-  }'
+  # headers: {CacheControl: 'max-age=604800, public'}
 #   headers: '{
 # 	"list": [{
 # 		"fileFilter": ["!*.html", "!*.md"],
