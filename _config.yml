@@ -91,19 +91,19 @@ deploy:
   region: ap-southeast-2
   cf_distribution: EK8ID5LPH9GUN
   # headers: {CacheControl: 'max-age=604800, public'}
-#   headers: '{
-# 	"list": [{
-# 		"fileFilter": ["!*.html", "!*.md"],
-# 		"headers": {
-# 			"CacheControl": "max-age=86400"
-# 		}
-# 	}, {
-# 		"fileFilter": ["*.html", "*.md"],
-# 		"headers": {
-# 			"CacheControl": "no-cache, no-store"
-# 		}
-# 	}]
-# }'
+  headers: '{
+	"list": [{
+		"fileFilter": ["!*.html", "!*.md"],
+		"headers": {
+			"CacheControl": "max-age=31536000, public"
+		}
+	}, {
+		"fileFilter": ["*.html", "*.md"],
+		"headers": {
+			"CacheControl": "max-age=604800, public"
+		}
+	}]
+}'
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
